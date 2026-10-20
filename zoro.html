@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="robots" content="noindex, follow">
+    <link rel="icon" href="https://cdn.manageengine.com/sites/meweb/images/favicon.ico" type="image/vnd.microsoft.icon">
+    <title>Page not found | ManageEngine OpUtils</title>
+    <script src="https://cdn.manageengine.com/js/ipcallback-new.js"></script>
+    <link rel="stylesheet" media="all" href="https://cdn.manageengine.com/sites/meweb/css/common/mweb-custom.css">
+    <link rel="stylesheet" media="all" href="https://cdn.manageengine.com/sites/meweb/css/product/oputils.css">
+</head>
+
+<body class="product-oputils template-me_prd_nolhs i18n-en" data-prdname="oputils">
+    <div class="pop-box"></div>
+    <div class="pop-container"></div>
+    <header>
+        <div id="commonHeader">
+            <div id="header-topsec"></div>
+            <div class="" id="MEmobPanel">
+                <div id="MEdropPanel"></div>
+            </div>
+            <div id="header-mainsec"></div>
+        </div>
+    </header>
+    <!-- ===================== OpUtils 404 BODY START ===================== -->
+    <!-- Header (#commonHeader) and footer (#meCommonFooterNew) are injected by mweb-header.js / mweb-custom.js. Paste this block between them. -->
+    <style>
+        .opu404,
+        .opu404 * {
+            box-sizing: border-box
+        }
+
+        .opu404 {
+            background: #f8f8f8;
+            padding: 80px 20px 90px;
+            font-family: 'Zoho_Puvi_Regular', 'ZohoPuvi', sans-serif;
+            color: #444;
+            letter-spacing: normal;
+            line-height: 1.5
+        }
+
+        .opu404 .opu404-wrap {
+            max-width: 846px;
+            margin: 0 auto;
+            text-align: center
+        }
+
+        .opu404 p,
+        .opu404 h1,
+        .opu404 h2,
+        .opu404 h3,
+        .opu404 ul {
+            margin: 0;
+            padding: 0
+        }
+
+        .opu404 a {
+            text-decoration: none
+        }
+
+        .opu404 a:hover {
+            text-decoration: none
+        }
+
+        .opu404 a:focus-visible,
+        .opu404 button:focus-visible,
+        .opu404 input:focus-visible {
+            outline: 2px solid #146ef4;
+            outline-offset: 3px
+        }
+
+        /* illustration */
+        .opu404-illus {
+            display: block;
+            width: 440px;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto 26px
+        }
+
+        /* heading */
+        .opu404 .opu404-title {
+            font-family: 'Zoho_Puvi_Bold', 'ZohoPuvi', sans-serif;
+            font-weight: normal;
+            font-size: 36px;
+            line-height: 1.25;
+            color: #1a1a1a;
+            margin: 0 0 18px
+        }
+
+        .opu404 .opu404-sub {
+            font-size: 17px;
+            line-height: 1.6;
+            color: #444;
+            margin: 0 0 26px
+        }
+
+        /* search */
+        .opu404-search {
+            position: relative;
+            max-width: 846px;
+            margin: 0 auto
+        }
+
+        .opu404-search form {
+            position: relative;
+            margin: 0
+        }
+
+        .opu404-search-icon {
+            position: absolute;
+            left: 28px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 24px;
+            height: 24px;
+            color: #555;
+            pointer-events: none
+        }
+
+        .opu404 .opu404-search input {
+            display: block;
+            width: 100%;
+            height: 70px;
+            border: 1px solid #cfcfcf;
+            border-radius: 36px;
+            background: #fff;
+            padding: 0 28px 0 68px;
+            font-family: 'Zoho_Puvi_Regular', 'ZohoPuvi', sans-serif;
+            font-size: 20px;
+            color: #222;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+            outline: none;
+            transition: border-color .2s, box-shadow .2s;
+            margin: 0
+        }
+
+        .opu404 .opu404-search input::placeholder {
+            color: #555;
+            opacity: 1
+        }
+
+        .opu404 .opu404-search input:focus {
+            border-color: #146ef4;
+            box-shadow: 0 2px 12px rgba(20, 110, 244, .15)
+        }
+
+        .opu404-suggest {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: calc(100% + 8px);
+            background: #fff;
+            border: 1px solid #e1e1e1;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, .08);
+            text-align: left;
+            z-index: 20;
+            display: none;
+            overflow: hidden;
+            list-style: none;
+            padding: 6px 0
+        }
+
+        .opu404-suggest.is-open {
+            display: block
+        }
+
+        .opu404-suggest li {
+            list-style: none
+        }
+
+        .opu404-suggest a {
+            display: block;
+            padding: 10px 24px;
+            font-size: 15px;
+            color: #222
+        }
+
+        .opu404-suggest a:hover,
+        .opu404-suggest a.is-active {
+            background: #f2f6ff;
+            color: #146ef4
+        }
+
+        /* recently visited */
+        .opu404-recent {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 24px 0 38px
+        }
+
+        .opu404-recent-label {
+            font-family: 'Zoho_Puvi_SemiBold', 'ZohoPuvi', sans-serif;
+            font-size: 14px;
+            color: #333;
+            margin-right: 2px
+        }
+
+        .opu404 .opu404-chip {
+            display: inline-block;
+            padding: 5px 15px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            background: #f0f0f0;
+            font-size: 14px;
+            line-height: 1.4;
+            color: #444;
+            transition: border-color .2s, color .2s, background .2s
+        }
+
+        .opu404 .opu404-chip:hover {
+            border-color: #bdbdbd;
+            background: #fff;
+            color: #1a1a1a
+        }
+
+        /* core features */
+        .opu404-core {
+            border-top: 1px solid #e3e3e3;
+            border-bottom: 1px solid #e3e3e3;
+            padding: 26px 0 24px
+        }
+
+        .opu404 .opu404-core-title {
+            font-family: 'Zoho_Puvi_SemiBold', 'ZohoPuvi', sans-serif;
+            font-size: 14px;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            color: #333;
+            margin: 0 0 18px
+        }
+
+        .opu404-core-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 720px;
+            margin: 0 auto;
+            row-gap: 10px
+        }
+
+        .opu404 .opu404-core-links li {
+            list-style: none;
+            display: inline-flex;
+            align-items: center;
+            font-size: 15px;
+            color: #444
+        }
+
+        .opu404 .opu404-core-links li+li::before {
+            content: "|";
+            margin: 0 10px;
+            color: #333
+        }
+
+        .opu404 .opu404-core-links li.is-row-start::before {
+            content: none
+        }
+
+        .opu404 .opu404-core-links a {
+            color: #444;
+            transition: color .2s
+        }
+
+        .opu404 .opu404-core-links a:hover {
+            color: #e02b45
+        }
+
+        /* section heads */
+        .opu404 .opu404-h2 {
+            font-family: 'Zoho_Puvi_SemiBold', 'ZohoPuvi', sans-serif;
+            font-weight: normal;
+            font-size: 26px;
+            line-height: 1.3;
+            color: #1a1a1a;
+            margin: 0 0 24px
+        }
+
+        .opu404 .opu404-h2-sub {
+            font-size: 17px;
+            line-height: 1.65;
+            color: #555;
+            max-width: 640px;
+            margin: -12px auto 26px
+        }
+
+        /* find your way back */
+        .opu404-back {
+            padding-top: 42px
+        }
+
+        .opu404-back-btns {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px
+        }
+
+        .opu404 .opu404-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            height: 48px;
+            padding: 0 20px;
+            border: 1px solid #444;
+            border-radius: 4px;
+            background: transparent;
+            font-family: 'Zoho_Puvi_Medium', 'ZohoPuvi', sans-serif;
+            font-size: 18px;
+            color: #1a1a1a;
+            white-space: nowrap;
+            transition: background .2s, color .2s, border-color .2s
+        }
+
+        .opu404 .opu404-btn svg {
+            width: 22px;
+            height: 22px;
+            flex-shrink: 0;
+            stroke: currentColor;
+            fill: none;
+            stroke-width: 1.5;
+            stroke-linecap: round;
+            stroke-linejoin: round
+        }
+
+        .opu404 .opu404-btn:hover {
+            background: #1a1a1a;
+            border-color: #1a1a1a;
+            color: #fff
+        }
+
+        /* products */
+        .opu404-products {
+            padding-top: 72px
+        }
+
+        .opu404-prod-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 780px;
+            margin: 0 auto
+        }
+
+        .opu404 .opu404-prod {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            height: 58px;
+            padding: 0 14px;
+            background: #fff;
+            border: 1px solid #e3e3e3;
+            border-radius: 4px;
+            font-family: 'Zoho_Puvi_Medium', 'ZohoPuvi', sans-serif;
+            font-size: 17px;
+            color: #1a1a1a;
+            white-space: nowrap;
+            transition: border-color .2s, box-shadow .2s
+        }
+
+        .opu404 .opu404-prod:hover {
+            border-color: #c8c8c8;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, .06)
+        }
+
+        .opu404-prod-logo {
+            width: 32px;
+            height: 32px;
+            flex-shrink: 0;
+            display: block
+        }
+
+        .opu404-prod-name {
+            margin-right: 12px
+        }
+
+        .opu404-prod-ext {
+            width: 22px;
+            height: 22px;
+            flex-shrink: 0;
+            stroke: #444;
+            fill: none;
+            stroke-width: 1.5;
+            stroke-linecap: round;
+            stroke-linejoin: round
+        }
+
+        /* support */
+        .opu404-support {
+            padding-top: 70px
+        }
+
+        .opu404 .opu404-support .opu404-h2 {
+            max-width: 600px;
+            margin: 0 auto 24px
+        }
+
+        /* responsive */
+        @media (max-width:900px) {
+            .opu404 {
+                padding: 60px 20px 70px
+            }
+
+            .opu404 .opu404-title {
+                font-size: 30px
+            }
+
+            .opu404 .opu404-h2 {
+                font-size: 23px
+            }
+        }
+
+        @media (max-width:767px) {
+            .opu404 {
+                padding: 44px 16px 60px
+            }
+
+            .opu404-illus {
+                width: 300px;
+                margin-bottom: 20px
+            }
+
+            .opu404 .opu404-title {
+                font-size: 26px
+            }
+
+            .opu404 .opu404-sub {
+                font-size: 15px
+            }
+
+            .opu404 .opu404-search input {
+                height: 56px;
+                font-size: 16px;
+                padding-left: 56px
+            }
+
+            .opu404-search-icon {
+                left: 22px;
+                width: 20px;
+                height: 20px
+            }
+
+            .opu404 .opu404-core-links li {
+                font-size: 14px
+            }
+
+            .opu404 .opu404-h2 {
+                font-size: 21px
+            }
+
+            .opu404 .opu404-h2-sub {
+                font-size: 15px
+            }
+
+            .opu404 .opu404-btn {
+                font-size: 16px;
+                height: 46px
+            }
+
+            .opu404 .opu404-prod {
+                font-size: 15px;
+                height: 54px
+            }
+
+            .opu404-products {
+                padding-top: 56px
+            }
+
+            .opu404-support {
+                padding-top: 54px
+            }
+        }
+
+        @media (max-width:520px) {
+
+            .opu404-back-btns,
+            .opu404-prod-grid {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 12px
+            }
+
+            .opu404 .opu404-btn {
+                justify-content: center
+            }
+
+            .opu404 .opu404-prod {
+                justify-content: space-between
+            }
+
+            .opu404-prod-name {
+                flex: 1;
+                text-align: left
+            }
+
+            .opu404 .opu404-core-links li::before {
+                content: none !important
+            }
+
+            .opu404-core-links {
+                flex-direction: column;
+                align-items: center
+            }
+
+            .opu404 .opu404-search input {
+                font-size: 14px;
+                padding-left: 50px;
+                padding-right: 18px
+            }
+
+            .opu404-search-icon {
+                left: 18px
+            }
+        }
+
+        @media (prefers-reduced-motion:reduce) {
+            .opu404 * {
+                transition: none !important
+            }
+        }
+    </style>
+
+    <section class="opu404" aria-labelledby="opu404-title">
+        <div class="opu404-wrap">
+
+            <!-- 404 illustration -->
+            <svg class="opu404-illus" viewBox="0 0 440 165" role="img" aria-label="404"
+                xmlns="http://www.w3.org/2000/svg">
+                <g fill="#cbcbcb">
+                    <!-- left 4 -->
+                    <polygon points="2,128 50,8 80,17 40,128" />
+                    <rect x="24" y="112" width="104" height="16" />
+                    <polygon points="72,84 102,82 104,128 72,128" fill="#d6d6d6" />
+                    <!-- right 4 -->
+                    <polygon points="282,128 336,2 366,11 322,128" />
+                    <rect x="306" y="112" width="106" height="16" />
+                    <polygon points="355,84 386,82 388,128 355,128" fill="#d6d6d6" />
+                </g>
+                <!-- igloo 0 -->
+                <path d="M142 128V90c0-42 28-66 63-66s63 24 63 66v38z" fill="#fdfdfd" stroke="#cbcbcb"
+                    stroke-width="2" />
+                <path d="M176 128V92c0-22 12-36 29-36s29 14 29 36v36" fill="#f6f6f6" stroke="#cbcbcb"
+                    stroke-width="2" />
+                <path d="M184 128V94c0-16 9-27 21-27s21 11 21 27v34" fill="none" stroke="#cbcbcb" stroke-width="2" />
+                <ellipse cx="190" cy="44" rx="19" ry="7" fill="#d9d9d9" />
+                <ellipse cx="229" cy="42" rx="8" ry="4.5" fill="#d9d9d9" />
+                <circle cx="248" cy="25" r="1.6" fill="#e2e2e2" />
+                <!-- ground -->
+                <g stroke="#cbcbcb" stroke-width="2" stroke-linecap="round">
+                    <line x1="2" y1="128" x2="412" y2="128" />
+                    <line x1="422" y1="132" x2="434" y2="132" />
+                    <line x1="54" y1="143" x2="62" y2="143" />
+                    <line x1="76" y1="143" x2="96" y2="143" />
+                    <line x1="34" y1="157" x2="42" y2="157" />
+                    <line x1="328" y1="143" x2="336" y2="143" />
+                    <line x1="348" y1="143" x2="386" y2="143" />
+                    <line x1="396" y1="157" x2="404" y2="157" />
+                </g>
+            </svg>
+
+            <h1 class="opu404-title" id="opu404-title">We couldn't find that page.</h1>
+            <p class="opu404-sub">The page you're looking for may have been moved, renamed, or is no longer available.
+            </p>
+
+            <!-- search -->
+            <div class="opu404-search">
+                <form id="opu404SearchForm" role="search" autocomplete="off">
+                    <svg class="opu404-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8" />
+                        <path d="m21 21-4.35-4.35" />
+                    </svg>
+                    <label for="opu404SearchInput" class="opu404-sr"
+                        style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Search OpUtils
+                        features</label>
+                    <input id="opu404SearchInput" type="search" placeholder="Looking for a particular OpUtils feature?"
+                        aria-autocomplete="list" aria-controls="opu404Suggest" aria-expanded="false">
+                </form>
+                <ul class="opu404-suggest" id="opu404Suggest" role="listbox"></ul>
+            </div>
+
+            <!-- recently visited -->
+            <div class="opu404-recent">
+                <span class="opu404-recent-label">Recently visited:</span>
+                <a class="opu404-chip" href="https://www.manageengine.com/products/oputils/ddi.html?opu-404">DDI
+                    homepage</a>
+                <a class="opu404-chip"
+                    href="https://www.manageengine.com/products/oputils/what-is-ipam.html?opu-404">What is IPAM</a>
+                <a class="opu404-chip"
+                    href="https://www.manageengine.com/products/oputils/dhcp-reservation.html?opu-404">DHCP reservation
+                    feature page</a>
+            </div>
+
+            <!-- core features -->
+            <div class="opu404-core">
+                <h2 class="opu404-core-title">Core features</h2>
+                <ul class="opu404-core-links">
+                    <li><a href="https://www.manageengine.com/products/oputils/microsoft-dns-management.html?opu-404">DNS
+                            management</a></li>
+                    <li><a href="https://www.manageengine.com/products/oputils/microsoft-dhcp-management.html?opu-404">DHCP
+                            management</a></li>
+                    <li><a href="https://www.manageengine.com/products/oputils/ip-address-manager.html?opu-404">IP
+                            address management (IPAM)</a></li>
+                    <li><a href="https://www.manageengine.com/products/oputils/switch-port-mapper.html?opu-404">Switch
+                            port mapping</a></li>
+                    <li><a href="https://www.manageengine.com/products/oputils/rogue-detection-tool.html?opu-404">Rogue
+                            device detection</a></li>
+                    <li><a href="https://www.manageengine.com/products/oputils/ip-tools.html?opu-404">All-in-one network
+                            utilities</a></li>
+                </ul>
+            </div>
+
+            <!-- find your way back -->
+            <div class="opu404-back">
+                <h2 class="opu404-h2">Find your way back to OpUtils</h2>
+                <div class="opu404-back-btns">
+                    <a class="opu404-btn" href="https://www.manageengine.com/products/oputils/?opu-404">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4" />
+                            <path d="M14 2v6h6" />
+                            <path d="M20 8v4" />
+                            <circle cx="16" cy="17" r="3" />
+                            <path d="m18.2 19.2 2.3 2.3" />
+                        </svg>
+                        Explore OpUtils
+                    </a>
+                    <a class="opu404-btn" href="https://www.manageengine.com/products/oputils/help/?opu-404">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3" />
+                            <path d="M12 17h.01" />
+                        </svg>
+                        Browse Help documentation
+                    </a>
+                    <a class="opu404-btn"
+                        href="https://www.manageengine.com/products/oputils/request-demo.html?opu-404">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="2" y="3" width="20" height="14" rx="2" />
+                            <path d="M8 21h8M12 17v4" />
+                            <path d="m10 7.5 4.5 2.5-4.5 2.5z" />
+                        </svg>
+                        Watch product demo
+                    </a>
+                </div>
+            </div>
+
+            <!-- ManageEngine products -->
+            <div class="opu404-products">
+                <h2 class="opu404-h2">Explore ManageEngine's network and IT operations products</h2>
+                <p class="opu404-h2-sub">Looking for a broader network management solution? Explore the products in the
+                    ManageEngine Full Stack Observability suite.</p>
+                <div class="opu404-prod-grid">
+                    <a class="opu404-prod" href="https://www.manageengine.com/it-operations-management/?opu-404"
+                        target="_blank" rel="noopener">
+                        <svg class="opu404-prod-logo" viewBox="0 0 53 66" aria-hidden="true">
+                            <path
+                                d="M48.95 21.8l-4.69 2.79-12.12-7.23a11.06 11.06 0 0 0-11.42 0L8.59 24.59 3.9 21.8 1.3 26.45l19.54 11.65a10.96 10.96 0 0 0 11.17 0l19.54-11.65zM29.41 33.44a5.8 5.8 0 0 1-5.97 0l-9.65-5.75 9.52-5.67a5.98 5.98 0 0 1 6.22 0l9.52 5.67z"
+                                fill="#009D54" />
+                            <path
+                                d="M27.71.77 26.43 0l-1.29.77L0 15.75v34.5L26.43 66l26.43-15.75v-34.5zm19.94 46.37L26.43 59.79 5.2 47.14v-6.15l21.23 12.56 21.22-12.56zm0-12.34-21.22 12.55L5.2 34.8V18.75L26.43 6.2l21.22 12.55z"
+                                fill="#007AC1" />
+                        </svg>
+                        <span class="opu404-prod-name">OpManager Nexus</span>
+                        <svg class="opu404-prod-ext" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                            <path d="M15 3h6v6M10 14 21 3" />
+                        </svg>
+                    </a>
+                    <a class="opu404-prod" href="https://www.manageengine.com/network-monitoring/?opu-404"
+                        target="_blank" rel="noopener">
+                        <svg class="opu404-prod-logo" viewBox="0 0 58 66" aria-hidden="true">
+                            <g fill="#007AC1">
+                                <path
+                                    d="M48.49 47.57 28.62 59.02 8.75 47.57 2.7 51.06 28.62 66l25.92-14.94zM28.62 0 0 16.5v29.17l6.05-3.49V19.99L28.62 6.98l22.57 13.01v22.19l6.05 3.49V16.5z" />
+                                <path
+                                    d="m18.12 26.95 7.49-4.32v-6.98l-13.54 7.8v15.26l6.05-3.49zm27.05-3.49-3.32-1.91-10.22-5.9v6.98l4.17 2.4 3.32 1.91v8.28l6.05 3.49z" />
+                                <path d="m36.42 40.61-7.8 4.49-7.8-4.49-6.05 3.49 13.85 7.99 13.85-7.99z" />
+                                <path d="M33.1 30.42v5.17l-4.48 2.59-4.49-2.59v-5.17l4.49-2.58z" />
+                            </g>
+                        </svg>
+                        <span class="opu404-prod-name">OpManager</span>
+                        <svg class="opu404-prod-ext" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                            <path d="M15 3h6v6M10 14 21 3" />
+                        </svg>
+                    </a>
+                    <a class="opu404-prod" href="https://www.manageengine.com/products/netflow/?opu-404" target="_blank"
+                        rel="noopener">
+                        <svg class="opu404-prod-logo" viewBox="0 0 66 66" aria-hidden="true">
+                            <path
+                                d="M59.76 29.88v6.24h-6.88l-8.26 15.94a3.13 3.13 0 0 1-5.57-.04L24.18 22.22l-6.46 12.24a3.13 3.13 0 0 1-2.76 1.67H6.25v-6.25h6.83l8.41-15.96a3.13 3.13 0 0 1 5.56.06l14.85 29.75 6.3-12.17a3.13 3.13 0 0 1 2.78-1.68z"
+                                fill="#CE1432" />
+                            <path
+                                d="M53.51 66H12.49A12.5 12.5 0 0 1 0 53.51V12.49A12.5 12.5 0 0 1 12.49 0h41.02A12.5 12.5 0 0 1 66 12.49v41.02A12.5 12.5 0 0 1 53.51 66zM12.49 6.25a6.25 6.25 0 0 0-6.24 6.24v41.02a6.25 6.25 0 0 0 6.24 6.24h41.02a6.25 6.25 0 0 0 6.24-6.24V12.49a6.25 6.25 0 0 0-6.24-6.24z"
+                                fill="#007AC1" />
+                        </svg>
+                        <span class="opu404-prod-name">Netflow Analyzer</span>
+                        <svg class="opu404-prod-ext" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                            <path d="M15 3h6v6M10 14 21 3" />
+                        </svg>
+                    </a>
+                    <a class="opu404-prod" href="https://www.manageengine.com/network-configuration-manager/?opu-404"
+                        target="_blank" rel="noopener">
+                        <svg class="opu404-prod-logo" viewBox="0 0 58 66" aria-hidden="true">
+                            <path d="M29 3.5 54 18v30L29 62.5 4 48V18z" fill="none" stroke="#007AC1" stroke-width="5"
+                                stroke-linejoin="round" />
+                            <path d="M40 24.5A13 13 0 1 0 40 41.5" fill="none" stroke="#009D54" stroke-width="5.5"
+                                stroke-linecap="round" />
+                            <path d="M33 28.5a6 6 0 1 0 0 9" fill="none" stroke="#007AC1" stroke-width="4"
+                                stroke-linecap="round" />
+                        </svg>
+                        <span class="opu404-prod-name">Network Configuration Manager</span>
+                        <svg class="opu404-prod-ext" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                            <path d="M15 3h6v6M10 14 21 3" />
+                        </svg>
+                    </a>
+                    <a class="opu404-prod" href="https://www.manageengine.com/products/firewall/?opu-404"
+                        target="_blank" rel="noopener">
+                        <svg class="opu404-prod-logo" viewBox="0 0 64 64" aria-hidden="true">
+                            <g fill="none" stroke="#007AC1" stroke-width="4">
+                                <circle cx="30" cy="30" r="25" />
+                                <path d="M5 30h50M30 5v50M9 17h42M9 43h42M19 17v13M41 17v13M19 30v13M41 30v13" />
+                            </g>
+                            <circle cx="50" cy="50" r="10" fill="#fff" />
+                            <circle cx="50" cy="50" r="7" fill="#E02B45" />
+                        </svg>
+                        <span class="opu404-prod-name">Firewall Analyzer</span>
+                        <svg class="opu404-prod-ext" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                            <path d="M15 3h6v6M10 14 21 3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- support -->
+            <div class="opu404-support">
+                <h2 class="opu404-h2">If you still can't find the information or feature you need, our support team can
+                    help.</h2>
+                <a class="opu404-btn" href="https://www.manageengine.com/products/oputils/support.html?opu-404">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M3 14v-2a9 9 0 0 1 18 0v2" />
+                        <path d="M3 14h3v6H4a1 1 0 0 1-1-1zM21 14h-3v6h2a1 1 0 0 0 1-1z" />
+                        <path d="M18 20a4 4 0 0 1-4 2h-1.5" />
+                    </svg>
+                    Contact Support
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        (function () {
+            var base = 'https://www.manageengine.com/products/oputils/';
+            var pages = [
+                ['DNS management', 'microsoft-dns-management.html', 'dns zone record'],
+                ['DHCP management', 'microsoft-dhcp-management.html', 'dhcp scope lease'],
+                ['DHCP monitoring', 'dhcp-monitoring.html', 'dhcp server monitor'],
+                ['DHCP reservation', 'dhcp-reservation.html', 'dhcp reservation'],
+                ['DDI management', 'ddi.html', 'ddi dns dhcp ipam'],
+                ['IP address management (IPAM)', 'ip-address-manager.html', 'ip ipam address'],
+                ['IP address tracker', 'ip-address-tracker.html', 'ip track utilization'],
+                ['Advanced IP scanner', 'advanced-ip-scanner.html', 'ip scan scanner'],
+                ['Subnet monitoring', 'subnet-monitoring.html', 'subnet'],
+                ['Switch port mapping', 'switch-port-mapper.html', 'switch port mapper'],
+                ['Cisco ACI switch port management', 'cisco-aci-switch-port-management.html', 'cisco aci'],
+                ['Port scanner', 'port-scanner.html', 'port scan'],
+                ['Rogue device detection', 'rogue-detection-tool.html', 'rogue device security'],
+                ['MAC address filtering', 'mac-address-filtering.html', 'mac filter'],
+                ['MAC address resolver', 'mac-address-resolver.html', 'mac resolver'],
+                ['DNS resolver', 'dns-resolver.html', 'dns resolver lookup'],
+                ['Network tools', 'ip-tools.html', 'tools utilities ping traceroute'],
+                ['Wake-on-LAN', 'wake-on-lan.html', 'wol wake'],
+                ['Bandwidth monitoring', 'bandwidth-monitoring.html', 'bandwidth'],
+                ['Cisco config file manager', 'cisco-config-file-manager.html', 'config backup'],
+                ['Editions and pricing', 'editions.html', 'price pricing edition compare'],
+                ['Request a demo', 'request-demo.html', 'demo'],
+                ['Download free trial', 'download.html', 'download trial'],
+                ['Help documentation', 'help/', 'help docs guide']
+            ];
+            var form = document.getElementById('opu404SearchForm');
+            var input = document.getElementById('opu404SearchInput');
+            var list = document.getElementById('opu404Suggest');
+            if (!form || !input || !list) return;
+            var current = [], idx = -1;
+
+            function url(p) { return base + p + (p.indexOf('?') > -1 ? '&' : '?') + 'opu-404'; }
+            function close() { list.classList.remove('is-open'); input.setAttribute('aria-expanded', 'false'); idx = -1; }
+            function render(q) {
+                q = q.trim().toLowerCase();
+                if (!q) { close(); return; }
+                current = pages.filter(function (p) { return (p[0] + ' ' + p[2]).toLowerCase().indexOf(q) > -1; }).slice(0, 6);
+                list.innerHTML = '';
+                if (!current.length) { close(); return; }
+                current.forEach(function (p, i) {
+                    var li = document.createElement('li'), a = document.createElement('a');
+                    li.setAttribute('role', 'option');
+                    a.href = url(p[1]); a.textContent = p[0]; a.id = 'opu404opt' + i;
+                    li.appendChild(a); list.appendChild(li);
+                });
+                list.classList.add('is-open'); input.setAttribute('aria-expanded', 'true');
+            }
+            function highlight() {
+                var links = list.querySelectorAll('a');
+                for (var i = 0; i < links.length; i++) links[i].classList.toggle('is-active', i === idx);
+            }
+            input.addEventListener('input', function () { render(input.value); });
+            input.addEventListener('keydown', function (e) {
+                if (!list.classList.contains('is-open')) return;
+                if (e.key === 'ArrowDown') { e.preventDefault(); idx = Math.min(idx + 1, current.length - 1); highlight(); }
+                else if (e.key === 'ArrowUp') { e.preventDefault(); idx = Math.max(idx - 1, 0); highlight(); }
+                else if (e.key === 'Escape') { close(); }
+            });
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                var q = input.value.trim();
+                if (!q) return;
+                if (current.length) { window.location.href = url(current[idx > -1 ? idx : 0][1]); return; }
+                window.location.href = 'https://www.google.com/search?q=' + encodeURIComponent('site:manageengine.com/products/oputils ' + q);
+            });
+            document.addEventListener('click', function (e) { if (!e.target.closest('.opu404-search')) close(); });
+
+            /* keep the "|" separators correct when the core-feature links wrap onto a new line */
+            var items = document.querySelectorAll('.opu404-core-links li');
+            function fixSeparators() {
+                var top = null;
+                for (var i = 0; i < items.length; i++) {
+                    items[i].classList.remove('is-row-start');
+                    var t = items[i].offsetTop;
+                    if (top !== null && t > top + 2) items[i].classList.add('is-row-start');
+                    top = t;
+                }
+            }
+            fixSeparators();
+            window.addEventListener('resize', fixSeparators);
+        })();
+    </script>
+    <!-- ===================== OpUtils 404 BODY END ===================== -->
+    <footer id="meCommonFooterNew"></footer>
+    <script src="https://accounts.zoho.com/u/info" type="text/javascript"></script>
+    <script src="https://cdn.manageengine.com/sites/meweb/js/common/mweb-header.js"></script>
+    <script src="https://cdn.manageengine.com/sites/meweb/js/common/mweb-custom.js"></script>
+</body>
+
+</html>
